@@ -3,7 +3,7 @@
 
 In this step we will export a Modelica model into FMU version 2.0 in Co-Simulation mode using Dymola tool. If you use Open Modelica tool, skip to next section.
  
-## 1.1 Open Dymola tool
+## 1.1 Start Dymola tool
 
 * Start Dymola (tested in version 2019).
 
@@ -18,11 +18,11 @@ You may need at least "Binary Mode Export" or "Source Code Generation" license i
 ## 1.3 Open Model File
 
 Open a Modelica model you would like to use in web simulator. 
-* In this guide, we will open Physiolibrary[1]
+* In this guide, we will open Physiolibrary[^1]
 
 <img src='Dymola_Physiolibrary.png'></img>
 
-* and model of Hemodynamics by Meurs [2]
+* and model of Hemodynamics by Fernandez de Cañete [^2] 
 
 <img src='Dymola_MeursModel.png'></img>
 
