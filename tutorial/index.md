@@ -14,9 +14,11 @@ Basic guide will follow you to:
 2. Compile FMU to Javascript with embedded WebAssembly (this allows to run model FMU inside browser.
 3. Create web simulator document.
 
-<a href='#basic1exportdymola' class="w3-button w3-orange">Basic Web Simulator Tutorial - start from Dymola</a>
+<a href='#basic1exportdymola' class="w3-button w3-theme-l1">Basic Web Simulator Tutorial - start from Dymola</a>
 
-<a href='#basic2exportom' class="w3-button w3-orange">Basic Web Simulator Tutorial - start from OpenModelica</a>
+<a href='#basic2exportom' class="w3-button w3-theme-l1">Basic Web Simulator Tutorial - start from OpenModelica</a>
+
+
 
 ## Advanced web simulator
 
@@ -27,7 +29,8 @@ Advanced guide will follow you to:
 2. Compile FMU to Javascript with embedded WebAssembly (this allows to run model FMU inside browser.
 3. Create web simulator project in Bodylight Editor.
 
-<a href='#advanced1exportdymola' class="w3-button w3-orange">Advanced Web Simulator Tutorial - start from Dymola</a>
+<a href='#advanced1exportdymola' class="w3-button w3-theme-l1">Advanced Web Simulator Tutorial - start from Dymola</a>
 
-<a href='#advanced2exportom' class="w3-button w3-orange">Basic Web Simulator Tutorial - start from OpenModelica</a>
+<a href='#advanced2exportom' class="w3-button w3-theme-l1">Basic Web Simulator Tutorial - start from OpenModelica</a>
+
 

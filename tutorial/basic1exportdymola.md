@@ -1,4 +1,3 @@
-
 # 1. Export Model to FMU in Dymola
 
 In this step we will export a Modelica model into FMU version 2.0 in Co-Simulation mode using Dymola tool. If you use Open Modelica tool, skip to next section.
@@ -24,7 +23,7 @@ Open a Modelica model you would like to use in web simulator.
 
 * and model of Hemodynamics by Fernandez de Cañete [^2] 
 
-<img src='Dymola_MeursModel.png'></img>
+<img src='Dymola_CaneteModel.png'></img>
 
 ## 1.4 Setup FMU Export options
 * Open `Simulation (tab) -> Simulation -> Setup`
