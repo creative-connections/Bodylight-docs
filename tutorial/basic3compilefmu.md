@@ -1,9 +1,9 @@
-# 3. Compile FMU to Web Assembly
+# Compile FMU to Web Assembly
 
 We will use the produced FMU file with source codes to compile it to WebAssembly usable by modern browser supporting it via Javascript api.
 As prerequisite for this step you need to have the Bodylight.JS FMU Compiler available, e.g. as part of Bodylight VirtualMachine.
 
-# 3.0 Start Bodylight Virtual Machine
+## Start Bodylight Virtual Machine
 
 If you do not have Bodylight-Virtualmachine installed, follow instruction at 
 https://github.com/creative-connections/Bodylight-Virtualmachine
@@ -15,29 +15,29 @@ cd Bodylight-Virtualmachine
 vagrant up
 ```
 
-# 3.1 Check Compiler Web Service
+## Check Compiler Web Service
 
 The port 8080 is redirected to virtual machine web server. The compiler web service is available Bodylight VirtualMachine at the link http://localhost:8080/compiler/ Check this link and you should see this output:
 
 ![Compiler0](Compiler_Upload0.png)
 
-# 3.2 Select the FMU file
+## Select the FMU file
 
 Click the <button>Browse</button> button and select for the FMU file from previous step
 
 ![Compiler1](Compiler_Upload1.png)
 
-# 3.3 Click Upload
+## Click Upload
 
 After selecting the FMU File, click <button>Upload</button> button to start the compilation process.
 
 ![Compiler2](Compiler_Upload2.png)
 
-# 3.4 See the Compilation Process
+## See the Compilation Process
 
 The compilation process should produce the resulting ZIP file after 30-60s.
 
 ![Compiler3](Compiler_Compilation.png)
 
 If the process failed consult output logs.
-Otherwise proceed with the resulting ZIP file into next step.
+Otherwise proceed with the resulting ZIP file into next step. 

@@ -2,5 +2,4 @@
     * [Basic 1 Export to FMU in Dymola](#basic1exportdymola.md)
     * [Basic 2 Export to FMU in OpenModelica](#basic2exportom.md)
     * [Basic 3 Compile FMU to WebAssembly](#basic3compilefmu.md)
-    * [Basic 4 Create Web Simulator in Editor](#basic4editor.md)
-
+    * [Basic 4 Create Web Simulator in Editor](#basic4editor.md) 
