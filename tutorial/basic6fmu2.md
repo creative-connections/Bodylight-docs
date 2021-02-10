@@ -36,8 +36,9 @@ Click <button><i class='fa fa-plus'></i> Add</button>.
 
 ## Submit the fmi component
 
-Click <button>Submit</button>. This will add the `bdl-fmi` component to the editor.
+Click <button>Submit</button>. 
 
 ![EditorFmuComponent](EditorFmuComponent.png)
 
+This step adds the `bdl-fmi` component to the editor and renders control buttons to play/pause, step and reset simulation.
 
