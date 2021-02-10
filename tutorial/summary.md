@@ -4,7 +4,10 @@
     * [Basic 3 Compile FMU to WebAssembly](#basic3compilefmu.md)
     * [Basic 4 Create Web Simulator in Editor](#basic4editor.md) 
     * [Basic 5 FMU Component](#basic5fmu.md) 
-    * [Basic 6 FMU Variablest](#basic6fmu2.md) 
-  * [Advanced 1 Export to FMU in Dymola](#advanced1exportdymola.md)
+    * [Basic 6 FMU Variables](#basic6fmu2.md) 
+    * [Basic 7 Control](#basic7control.md) 
+    * [Basic 8 Visualization](#basic8visualize.md) 
+    * [Basic 9 HTML Export](#basic9export.md) 
+* [Advanced 1 Export to FMU in Dymola](#advanced1exportdymola.md)
     * [Advanced 2 Export to FMU in OpenModelica](#advanced2exportom.md)
-    * 
+
