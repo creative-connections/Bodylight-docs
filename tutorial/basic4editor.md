@@ -1,4 +1,4 @@
-# Bodylight-Editor
+# Bodylight-Editor {num=4}
 
 In this step we will create a new document in MARKDOWN syntax using Bodylight Editor which is part of the virtual-machine or is deployed as static web page. We will utilize previously generated ZIP file with WebAssembly version of model simulator.
 

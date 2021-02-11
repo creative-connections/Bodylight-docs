@@ -1,4 +1,4 @@
-# Input component
+# Input component {num=7}
 
 In this section we create input component which collect a user's input as a range slider.
 

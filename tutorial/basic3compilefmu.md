@@ -1,4 +1,4 @@
-# Compile FMU to Web Assembly
+# Compile FMU to Web Assembly {num=3}
 
 In this step we will compile source codes in FMU file into WebAssembly - therefore FMU can be executed by modern browsers.
 You will need Bodylight.JS FMU Compiler which can be executed either in virtual machine in Oracle's VirtualBox (see Bodylight-VirtualMachine) or Docker image (see Bodylight.js-FMU-Compiler).

@@ -3,11 +3,11 @@
 
 In this step we will export a Modelica model into FMU version 2.0 in Co-Simulation mode using Dymola tool. If you use Open Modelica tool, skip to next section.
  
-# Start Dymola tool
+## Start Dymola tool
 
 * Start Dymola (tested in version 2019).
 
-# Check License
+## Check License
 
 You may need at least "Binary Mode Export" or "Source Code Generation" license in order to export FMU with source codes.
 
@@ -16,7 +16,7 @@ You may need at least "Binary Mode Export" or "Source Code Generation" license i
 ![Dymola Licence](Dymola_License.png)
 
 
-# Open Model File
+## Open Model File
 
 Open a Modelica model you would like to use in web simulator. 
 * In this guide, we will open Physiolibrary[^1]
@@ -28,7 +28,7 @@ Open a Modelica model you would like to use in web simulator.
 
 ![Dymola_Fernandez](Dymola_CaneteModel.png)
 
-# Setup FMU Export options
+## Setup FMU Export options
 * Open `Simulation (tab) -> Simulation -> Setup`
 * in `FMI-Export` tab check 
   * Type: `Co-Simulation with CVODE`
@@ -37,12 +37,12 @@ Open a Modelica model you would like to use in web simulator.
 
 ![Dymola FMU Settings](Dymola_FMUSettings.png)
 
-# Do FMU Export
+## Do FMU Export
   * `Simulation -> Translate -> FMU`
 
 ![Dymola FMU Export](Dymola_FMUExport.png)
 
-# Use FMU file
+## Use FMU file
 
 Last step created a file with `.fmu` extension in current working directory.
 Check it in your file system. 

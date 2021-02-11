@@ -1,4 +1,4 @@
-# Bodylight-Editor part 2
+# Bodylight-Editor part 2 {num=5}
 In this step we will create a Bodylight component: `bdl-fmi` that allows control simulation interactively
 
 # Upload ZIP file with WebAssembly 
