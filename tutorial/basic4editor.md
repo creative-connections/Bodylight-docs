@@ -8,17 +8,17 @@ Open Bodylight-Editor
 
 ![Editor](BodylightEditor1.png)
 
-# Create new project
+## Create new project
 
 In the left menu click: 
 `Project menu -> New project`
 
-# Create new file
+## Create new file
 
 Under the left menu click button:
 <button>`+ Create new file`</button>
 
-# Add some text in Markdown
+## Add some text in Markdown
 
 The [markdown-it](https://markdown-it.github.io/) is used to render markdown syntax and it is enhanced with `footnote`, `highlight.js` and [katex](https://katex.org/) plugins. Additionally [w3-css](https://www.w3schools.com/w3css/defaulT.asp) and [bodylight-components]() syntax in HTML/CSS is allowed. 
 
