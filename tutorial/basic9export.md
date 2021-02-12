@@ -19,18 +19,22 @@ Change the slider value. When released - it is sent to model and simulation is r
 Show some variables in chart:
 <bdl-chartjs-time id="id10" width="300" height="200" fromid="idfmi" labels="Pressure in Aorta" initialdata="" refindex="0" refvalues="1"></bdl-chartjs-time>
 ```
+## (optionally) Save project as ZIP
+Save the project as a ZIP file for further usage. 
+
+Click <button>Project Menu</button> and click <button> Save project as ZIP</button>. 
+
+The ZIP file contains all MD and other files, additionally it contains project specific json file to facilitate loading project in another computer.
+
+Bodylight-Editor is static web page - meaning it does not store and transfer your data to a server, thus it's necessary to save your project locally. The current project is stored in browser local cache and will disapear when browser cache is cleaned.
 
 ## Export to HTML
 
 Click <button>Project menu</button> and select <button>Export project as HTML</button>.
-A dialog asking for file name will appear.
+A dialog asking for file name will appear. Fill the name and submit.
+A ZIP file will be created and `Save As` feature of web browser is used to save the ZIP locally to your computer.
 
-## Exported file
-
-Fill the name and submit.
-A ZIP file will be created and`Save As` feature of web browser is used to save the ZIP locally to your computer.
-
-## Zip file structure
+## HTML Export Zip file structure
 
 A ZIP file contains these files:
  - index.md (document with web simulator)
@@ -46,9 +50,9 @@ You may deploy all the files in ZIP archive into any web server - the index.html
 You may unzip all files and test it locally by loading index.html by browser.
 
 ### Firefox 
-Firefox version >68.0 requires `privacy.file_unique_origin` to be `false`. Set it in `about:config` and index.html from the exported project.
+Firefox version >68.0 requires `privacy.file_unique_origin` to be `false`. Set it in `about:config` and open `index.html` from the exported project.
 
 ### Chrome
-Chrome can be used with [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) extension, which can serve selected directory as a root of local web server and open index.html from the exported project.
+Chrome can be used with [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) extension, which can serve selected directory as a root of local web server. 
 
 

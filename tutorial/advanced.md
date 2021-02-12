@@ -1,12 +1,12 @@
-# Advanced tutorial
+# Advanced tutorial {num=10}
 
-To produce multipage interactive web simulators you need these Bodylight tools: Bodylight.js-FMU-Compiler, Bodylight.js-Components and Bodylight-Editor or Bodylight-Composer tool. 
+To produce multipage interactive web simulators you need these Bodylight tools: Bodylight.js-FMU-Compiler, Bodylight.js-Components and Bodylight-Editor. 
 
 Advanced guide will follow you to:
-1. Compile Modelica model to FMU with source codes including solver.
-2. Compile FMU to Javascript with embedded WebAssembly (this allows to run model FMU inside browser.
-3. Create web simulator project in Bodylight Editor.
+1. Create multipage web simulator project in Bodylight Editor.
+2. Integrate Adobe Animate object for visualisation
 
-<a href='#advanced1exportdymola.md' class="w3-button w3-theme-l1">Advanced Web Simulator Tutorial - start from Dymola</a>
 
-<a href='#advanced2exportom.md' class="w3-button w3-theme-l1">Advanced Web Simulator Tutorial - start from OpenModelica</a>
+<a href='#advanced1editor.md' class="w3-button w3-theme-l1">Advanced Web Simulator Tutorial - start from Dymola</a>
+
+

@@ -10,5 +10,5 @@
   * [Basic 8 Visualization](#basic8visualize.md) 
   * [Basic 9 HTML Export](#basic9export.md) 
 * [Advanced Web Simulator](#advanced.md)
-  * [Advanced 1 Export to FMU in Dymola](#advanced1exportdymola.md)
-  * [Advanced 2 Export to FMU in OpenModelica](#advanced2exportom.md)
+  * [Advanced 11 Export to FMU in Dymola](#advanced11editor.md)
+  * [Advanced 12 Export to FMU in OpenModelica](#advanced12newpage.md)

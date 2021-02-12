@@ -12,7 +12,7 @@ In this step we will export a Modelica model into FMU in Co-Simulation mode usin
 ## Open Model File
 
 Open a Modelica model you would like to use in web simulator. 
-* In this guide, we will open Physiolibrary[^1] via `File -> System Libraries -> Physiolibrary
+* In this guide, we will open Physiolibrary[^1] via `File -> System Libraries -> Physiolibrary`
 
 * and model of Hemodynamics by Fernandez de Cañete [^2] 
 
