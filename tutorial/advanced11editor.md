@@ -1,6 +1,6 @@
 # Advanced Editor {num=11}
 
-In this step we will open existing project created in Basic Tutorial.
+In this step we will open existing project created in Basic Tutorial and create a new empty page.
 
 ## Open Bodylight-Editor 
 
@@ -12,6 +12,23 @@ In this step we will open existing project created in Basic Tutorial.
 
 ## Open project ZIP file
 
-If the editor contains project created in Basic Tutorial, you may skip this step. Otherwise click <button>Project Menu</button> and <button>Load project from ZIP</button> and select ZIP file containing the project. 
+If the editor already contains project created in Basic Tutorial, you may skip this step. Otherwise click <button>Project Menu</button> and <button>Load project from ZIP</button> and select ZIP file containing the project. 
+
+You should see the basic project files:
+
+![EditorBasicFiles](EditorBasicFiles.png)
 
 
+## Create a new file
+
+Click <button><i class="fa fa-plus"></i> Create new file</button> and enter name 'animation.md'.
+
+## Add link to summary
+
+Click on `summary.md` file in the left project list panel and add a row linking to the `animation.md` file. E.g.
+```markdown
+  * [Introduction](#index.md)
+  * [Animation](#animation.md)
+```
+
+Do not forget the hash sign `#` before `animation.md` .
