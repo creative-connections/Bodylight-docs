@@ -1,4 +1,4 @@
-# Bodylight-Editor part 3 {num=6}
+# 6. Bodylight-Editor part 3
 
 In this section we will select `output` variables which will be used to visualize and `input` variables which will be used to manipulate model parameter values.
 

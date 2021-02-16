@@ -1,4 +1,4 @@
-# Advanced {num=12}
+# 12. Advanced
 
 click on `animation.md` file in project panel to go back from summary. 
 

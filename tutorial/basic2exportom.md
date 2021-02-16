@@ -1,4 +1,4 @@
-# Export Model to FMU in OpenModelica {num=2}
+# 2. Export Model to FMU in OpenModelica
 
 In this step we will export a Modelica model into FMU in Co-Simulation mode using OpenModelica tool. If you use Dymola - follow previous section and skip this section.
 

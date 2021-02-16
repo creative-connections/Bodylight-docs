@@ -1,4 +1,4 @@
-# Animation {num=13}
+# 13. Animation
 In this section we will import animation object created in Adobe Animate and exported as `Create.js` object.
 
 ## Prepare or download sample animation object

@@ -1,4 +1,4 @@
-# Advanced Editor {num=11}
+# 11. Advanced Editor
 
 In this step we will open existing project created in Basic Tutorial and create a new empty page.
 

@@ -1,5 +1,5 @@
 
-# Export Model to FMU in Dymola
+# 1. Export Model to FMU in Dymola
 
 In this step we will export a Modelica model into FMU version 2.0 in Co-Simulation mode using Dymola tool. If you use Open Modelica tool, skip to next section.
  

@@ -1,4 +1,4 @@
-# Bodylight-Editor {num=4}
+# 4. Bodylight-Editor
 
 In this step we will create a new document in MARKDOWN syntax using Bodylight Editor which is part of the virtual-machine or is deployed as static web page.
 

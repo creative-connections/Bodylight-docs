@@ -1,4 +1,4 @@
-# Output and visualise variable {num=8}
+# 8. Output and visualise variable
 
 In this section we will create a component which will visualize a variable comming as output from fmu component.
 
