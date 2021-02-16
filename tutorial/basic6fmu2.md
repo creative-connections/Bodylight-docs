@@ -10,7 +10,7 @@ Click in the `model output variables` field and fill first letters. e.g. `pressu
 
 ## Select the appropriate specific variable
 
-Click on the specific variable in autocomplete list. E.g. on `aorta.pressure` and then click <button><i class="fa fa-plus"></i> Add</button>.
+Click on the specific variable in autocomplete list. E.g. on `aortaPressure.pressure` and then click <button><i class="fa fa-plus"></i> Add</button>.
 
 ![EditorFmuOutput2](EditorFmuOutput2.png)
 

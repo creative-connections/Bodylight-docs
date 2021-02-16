@@ -12,8 +12,3 @@ This tutorial will guide you from model source code to functional interactive we
 
 <a class="w3-button w3-theme-d1" href="#advanced.md">Advanced Tutorial</a> produce multi page web simulator with one model, several charts and animation.
 
-
-
-
-
- 

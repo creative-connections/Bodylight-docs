@@ -23,12 +23,14 @@ You should see the basic project files:
 
 Click <button><i class="fa fa-plus"></i> Create new file</button> and enter name 'animation.md'.
 
+A sample content is filled in the new file.
+
 ## Add link to summary
 
-Click on `summary.md` file in the left project list panel and add a row linking to the `animation.md` file. E.g.
+Click on `summary.md` file in the left project list panel and add a row linking to the `animation.md` file. So it may look like:
 ```markdown
   * [Introduction](#index.md)
   * [Animation](#animation.md)
 ```
 
-Do not forget the hash sign `#` before `animation.md` .
+Do not forget the hash sign `#` before `animation.md` in parenthesis.
