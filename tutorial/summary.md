@@ -12,4 +12,4 @@
 * [Advanced Web Simulator](#advanced.md)
   * [Advanced 11 Editor](#advanced11editor.md)
   * [Advanced 12 New page](#advanced12newpage.md)
-  * [Advanced 13 Animation](#advanced12newpage.md)
+  * [Advanced 13 Animation](#advanced13animation.md)
