@@ -13,6 +13,23 @@ Click the button <button>`bdl-fmi`</button> above. A dialog with FMI will open o
 
 ![EditorFmuDialog](EditorFmuDialog.png)
 
+## Check FMI control options
+
+click the <span class="w3-pale-blue">FMI control options <i class="fa fa-arrow-down"></i></span> accordion and see the simulation options. 
+
+![FmiControlOptions](FMIControlOptions.png)
+
+
+You may leave the default values:
+* id: `idfmi` - unique id of this component, other may refer to it
+* src: - javascript file of with FMU compiled into web assembly
+* fminame:  - FMU model object name to be instantiated, leave the generated value
+* tolerance: `0.000001` - is tolerance of solver within FMU, leave it to 1e-6
+* starttime: `0` - start time of simulation
+* fstepsize: `0.01` - simulation step size in seconds, to fine grainded simulation 0.01 may be enough, to increase the speed of simulation you may set the step to `0.1` second or higher.
+* guid: - unique guid of object to be instantiated, leave the generated value
+
+
 
 
 
