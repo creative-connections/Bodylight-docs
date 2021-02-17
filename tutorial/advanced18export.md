@@ -56,7 +56,7 @@ A ZIP file contains these files:
 
  - summary.md (list of all web simulators) 
  - bodylight.bundle.js (bodylight web components bundle implementation)
- - index.html (HTML index file containing markdown-book component refering to index.md and summary.md)
+ - index.html (HTML index file containing markdown-book component refering to index.md and summary.md) - you may add some custom branding.
  
 ## Static web site
 

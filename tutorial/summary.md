@@ -18,3 +18,5 @@
   * [Advanced 16 Volume Animation](#advanced16volumeanimation.md)
   * [Advanced 17 Unit Conversion](#advanced17unitconversion.md)
   * [Advanced 18 Export](#advanced18export.md)
+  * [Advanced 19 Quiz](#advanced19quiz.md)
+
