@@ -18,6 +18,10 @@ Set these options
  
 ![EditorBind2a](EditorBind2a1.png)
 
+Note that value from model simulation between `fmin` and `fmax` is linearry converted to values between `amin` and `amax` as in following draft:
+
+![ModelAnimateConversion](ModelAnimateConversion.png)
+
 ## Test animation object
 
 Within the slider `animation test` you may check the animation position and it's corresponding `amin`,`amax` values. You may select '0', '50','99','100' this shows open, half open, closed and open position. The 100 value overflows the alowed value thus default animation position is showed - which is '0'.

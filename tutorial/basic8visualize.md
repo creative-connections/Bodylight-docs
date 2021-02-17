@@ -24,7 +24,7 @@ set the following options
 - initialdata: `` 
   - some initial values to be displayed
 - refindex: `0` 
-  - index of variable referenced from fmu component array
+  - index of variable referenced from fmu component array (starting from 0)
 - refvalues: `1`
   - number of variables to be displayed from the reference index
 

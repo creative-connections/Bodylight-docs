@@ -1,12 +1,10 @@
 # 14. Advanced - Add Output Variables
 
-In this section we will bind variables from model to animation objects.
+In this section we will add variables to be retrieved from model simulation.
 
 From previous section you should have 
 * working simulation with chart in left part
 * animation object that renders in right part
-
-In this section we will animate opened/closed valve.
 
 ## Pickup valve state from model
 

@@ -4,7 +4,7 @@ This section guide you to export simulation as a set of pages.
 
 ## Review the source code
 
-Add some text before components, e.g.:
+The source code of the second web simulator is as follows:
 ```markdown
 # Heart during cardiac cycle
 <div class="w3-row">
@@ -34,13 +34,14 @@ convertors="x/133.322-760"></bdl-chartjs-time>
 </div>
 ```
 ## (optionally) Save project as ZIP
+
+Bodylight-Editor is static web page - meaning it does not store and transfer your data to a server, thus it's necessary to save your project locally. The current project is stored in browser local cache, however, may dissapear when browser cache is cleaned.
+
 Save the project as a ZIP file for further usage. 
 
 Click <button>Project Menu</button> and click <button> Save project as ZIP</button>. 
 
-The ZIP file contains all MD and other files, additionally it contains project specific json file to facilitate loading project in another computer.
-
-Bodylight-Editor is static web page - meaning it does not store and transfer your data to a server, thus it's necessary to save your project locally. The current project is stored in browser local cache and will disapear when browser cache is cleaned.
+The ZIP file preserves all MD and other files, additionally it contains project specific json file to facilitate loading project in another computer.
 
 ## Export to HTML
 
@@ -51,14 +52,14 @@ A ZIP file will be created and `Save As` feature of web browser is used to save 
 ## HTML Export Zip file structure
 
 A ZIP file contains these files:
- - index.md (document with web simulator)
- - animation.md (second document with advanced web simulator)
+ - all MD files and other project files including Javascript and modelDescription.xml (WebAssembly compilation of FMU with model simulator)
+
  - summary.md (list of all web simulators) 
  - bodylight.bundle.js (bodylight web components bundle implementation)
  - index.html (HTML index file containing markdown-book component refering to index.md and summary.md)
- - JS and modelDescription.xml (WebAssembly compilation of FMU with model simulator)
-
+ 
 ## Static web site
+
 You may deploy all the files in ZIP archive into any web server - the index.html serves as a static page loading the other MD, JS files rendered on demand.
 
 ## Local web site
