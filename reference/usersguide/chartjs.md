@@ -50,6 +50,8 @@ By default - no convertors - raw data (usually in SI) are presented in chart.
   </div>
   
 ### ChartJS time
+  * `min` - set min for y scale - sets chart.js `options.scales.y.min`
+  * `max` - set max for y scale - sets chart.js `options.scales.x.min`
 <div class="w3-row">
   <div class="w3-quarter">
 
