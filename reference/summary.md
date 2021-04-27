@@ -1,7 +1,6 @@
    
   * [Bodylight](#index.md)
-    * [Getting Started](#gettingstarted.md)
-    * [Components in HTML](#usage/components1inhtml.md)
+    * [Getting Started](#usage/gettingstarted.md)
     * [Components in MD](#usage/components2inmd.md)
     * [Components in Moodle](#usage/components3inmoodle.md)
     * [Components in Adobe<br /> Captivate](#usage/components4inadobecaptivate.md)

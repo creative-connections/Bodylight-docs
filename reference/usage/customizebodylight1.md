@@ -1,9 +1,15 @@
-## Customize application prepared in Bodylight Composer v1.0
+# Notes on usage of application of Bodylight.js v1.0
 
-In order to do just minor updates in application prepared already in Bodylight.js v1.0 do:
+## Embeding existing v1.0 apps
+
+V1.0 apps are exported as single HTML files. This HTML can be embedded as iframe into web page.
+   
+## Manual interaction opr customization with v1.0 app
+Interaction between v1.0 app and other components or v2.0 app can be done using following example:
+
   1. Export BJP into Application HTML (do not set 'minimize')
-  2. Edit Application HTML
-  3. find 'createModelRuntime' and set global variable instance, e.g.: 
+  2. Edit the resulting HTML file
+  3. find `createModelRuntime` and add a row to export the `model` object as a global variable `window.BodylightModel`, e.g.: 
   ```javascript
 function createModelRuntime(Model, config, functions) {
 ...
@@ -12,7 +18,7 @@ function createModelRuntime(Model, config, functions) {
             window.BodylightModel = model;
 ...
   ```
-  Now the `BodylightModel` is exposed. You can call API `model.setValue()` in Application HTML:
+  Now the `BodylightModel` is exposed. You can call API `model.setValue()` as `window.BodylightModel.setValue()`:
 ```html
 <p>Added component, manipulating Bodylight web app from outside:</p>
 <p>set heart rate:

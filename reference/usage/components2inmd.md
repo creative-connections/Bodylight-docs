@@ -7,6 +7,8 @@ Bodylight web components contain special markdown components to read external MD
 All these have attribute `src` reffering to the MD file. MD file is read by fetch API from the same web directory as parent HTML file.
   
 The file `home.html` may look like:
+
+**home.html**
 ```html
 <!DOCTYPE html>
 <html>
@@ -23,7 +25,9 @@ The file `home.html` may look like:
 </body>
 ```
 
-This `bdl-markdown` component reads content of the file `home.md`:
+After loading `home.html` the `bdl-markdown` component reads content of the file `home.md`:
+
+**home.md**
 ```markdown
 # Changing Heart Rate
 heart rate can be set here:
