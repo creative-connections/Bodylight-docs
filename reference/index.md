@@ -7,7 +7,7 @@ standard web publishing in HTML (or Markdown) as interactive web documents with 
 
 The documentation is divided to: 
 
-<a class="w3-button w3-theme-d1" href="#usage/gettingstarted.md">Getting Started</a> - reference guide to collection of custom elements enhancing HTML following Web Components standard implemented in HTML and Javascript (ES6).
+<a class="w3-button w3-theme-d1" href="#usage/gettingstarted.md">Getting Started</a> - Quick samples on the usage of components in HTML, Markdown, Moodle, Adobe Captivate and notes on usage with apps created in Bodylight v1.0.
 
 <a class="w3-button w3-theme-d1" href="#usersguide/index.md">Reference guide</a> - reference guide to collection of custom elements enhancing HTML following Web Components standard implemented in HTML and Javascript (ES6). 
 
