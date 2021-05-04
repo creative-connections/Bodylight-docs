@@ -15,13 +15,10 @@ The file `home.html` may look like:
   <head>
     <meta charset="utf-8">
     <title>Bodylight web component</title>
-     <script type="module" src="bodylight.bundle.js"></script>
-     <script type="module" src="modelfmi.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/creative-connections/Bodylight.js-Components/dist/bodylight.bundle.js"></script>
   </head>
 <body aurelia-app="webcomponents">
-
   <bdl-markdown src="home.md"></bdl-markdown>
-
 </body>
 ```
 
