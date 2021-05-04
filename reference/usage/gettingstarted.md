@@ -33,7 +33,7 @@ So the resulting HTML file may look like
   </head>
 <body aurelia-app="webcomponents">
 <!-- put HTML as well as web components inside -->
-## simulation and chart
+
 <bdl-fmi id="idfmi" 
          src="Physiolibrary_Fluid_Examples_Fernandez2013_PulsatileCirculation.js" 
          fminame="Physiolibrary_Fluid_Examples_Fernandez2013_PulsatileCirculation" 
