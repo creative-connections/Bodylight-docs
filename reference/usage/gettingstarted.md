@@ -2,7 +2,7 @@
  
 1) Use `bodylight.bundle.js` directly from CDN:
     ```html
-      <script type="module" src="https://cdn.jsdelivr.net/gh/creative-connections/Bodylight.js-Components/dist/bodylight.bundle.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/creative-connections/Bodylight.js-Components/dist/bodylight.bundle.js"></script>
     ``` 
      
 2) Add attribute  `aurelia-app="webcomponents"` to the `body` e.g.:
@@ -13,7 +13,7 @@
 </body>
 ```
 
-3) Use web components to build interactive web simulator e.g.:
+3) Use web components inside `<body>` to build interactive web simulator e.g.:
 ```
   <bdl-range id="id1" min="40" max="180" default="60" title="Heart rate"></bdl-range>
   <bdl-fmi ...></bdl-fmi>
@@ -29,7 +29,7 @@ So the resulting HTML file may look like
   <head>
     <meta charset="utf-8">
     <title>Sample simulator with bodylight web components</title>
-      <script type="module" src="https://cdn.jsdelivr.net/gh/creative-connections/Bodylight.js-Components/dist/bodylight.bundle.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/creative-connections/Bodylight.js-Components/dist/bodylight.bundle.js"></script>
   </head>
 <body aurelia-app="webcomponents">
 <!-- put HTML as well as web components inside -->
@@ -53,7 +53,7 @@ So the resulting HTML file may look like
 
 * All bodylight web-components are prefixed with `bdl-`
 * `bdl-range` creates slider and if user change the value - this value is set to the model
-* `bdl-fmi` operated Modelica model exported to Javascript FMI - creates button to start/stop simulation and binds 
+* `bdl-fmi` controls Modelica model via FMI api. It creates button to start/stop simulation and binds 
 model variables to other components - inputs and outputs
 * `bdl-dygraphchart` shows a chart with values of variables retrieved from model
 
