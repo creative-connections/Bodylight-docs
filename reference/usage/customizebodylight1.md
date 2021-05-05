@@ -2,9 +2,9 @@
 
 ## Embeding existing v1.0 apps
 
-V1.0 apps are exported as single HTML files. This HTML can be embedded as iframe into web page.
+Bodylight.js v1.0 apps are exported as single HTML files. This HTML can be embedded as iframe into web page.
    
-## Manual interaction opr customization with v1.0 app
+## Manual interaction and customization with v1.0 app
 Interaction between v1.0 app and other components or v2.0 app can be done using following example:
 
   1. Export BJP into Application HTML (do not set 'minimize')
