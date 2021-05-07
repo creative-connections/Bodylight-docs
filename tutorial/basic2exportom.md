@@ -1,10 +1,15 @@
 # 2. Export Model to FMU in OpenModelica
 
+<div class="w3-panel w3-pale-red">
+  <h3>Under construction</h3>
+  <p>This section is under construction and instruction may fail as new version introduced FMU export with CVODE solver was not tested yet appropriately.</p>
+</div>
+
 In this step we will export a Modelica model into FMU in Co-Simulation mode using OpenModelica tool. If you use Dymola - follow previous section and skip this section.
 
 ## Start OpenModelica Editor 
 
-* Start OMEdit (tested in version 1.16.2).
+* Start OMEdit.
 
 ![OMStart](OM_Start.png)
 
