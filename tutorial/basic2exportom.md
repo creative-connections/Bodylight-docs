@@ -1,6 +1,6 @@
 # 2. Export Model to FMU in OpenModelica
 
-<div class="w3-panel w3-pale-red w3-border w3-display-container">
+<div class="w3-panel w3-theme-l4 w3-border w3-display-container">
   <h3>Under construction</h3>
   <p>This section is under construction and instruction may fail as new version of Open Modelica was not tested yet properly with an option to export FMU with CVODE solver.</p>
 </div>
