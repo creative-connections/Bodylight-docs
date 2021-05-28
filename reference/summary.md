@@ -41,5 +41,6 @@
     * [Markdown with Highlight.js](#editor/mdfilehighlight.md)
     * [Markdown with KATEX for math](#editor/mdfilekatex.md)
     * [Markdown with footnotes](#editor/mdfilefootnote.md)
-    * [Markdown with Bodylight.js-Components](#editor/mdfilefmi.md)      
+    * [Markdown with Bodylight.js-Components](#editor/mdfilefmi.md)
+    * [Upload File](#editor/uploadfile.md)      
   * [About](#about.md) 
