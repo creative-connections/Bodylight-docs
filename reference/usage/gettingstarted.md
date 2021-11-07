@@ -1,10 +1,10 @@
 # Getting Started 
  
-1) Use `bodylight.bundle.js` directly from CDN:
+1) EITHER use `bodylight.bundle.js` directly from CDN:
     ```html
       <script src="https://cdn.jsdelivr.net/gh/creative-connections/Bodylight.js-Components/dist/bodylight.bundle.js"></script>
     ``` 
-   * OR install bundle by npm: 
+   OR install `bodylight.bundle.js` with npm into your web app project: 
    ```shell
    npm i bodylight-components
    ```
@@ -62,7 +62,7 @@ refindex="0" refvalues="1" convertors="x/133.322-760"></bdl-chartjs-time>
 </div>
 </div>
 <div class="w3-half">
-Rendered result:
+ Rendered result is interactive, click <i class="fa fa-play"></i> to start simulation and change heart rate to see effect:
 
 <div class="w3-card w3-margin w3-padding" >
 <bdl-fmi id="idfmi" 
