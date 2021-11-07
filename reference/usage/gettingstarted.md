@@ -4,8 +4,12 @@
     ```html
       <script src="https://cdn.jsdelivr.net/gh/creative-connections/Bodylight.js-Components/dist/bodylight.bundle.js"></script>
     ``` 
+   * OR install bundle by npm: 
+   ```shell
+   npm i bodylight-components
+   ```
      
-2) Add attribute  `aurelia-app="webcomponents"` to the `body` e.g.:
+2) Add attribute  `aurelia-app="webcomponents"` to the `body` or any `div` element which will contain components e.g.:
 ```html
 ...
 <body aurelia-app="webcomponents">
