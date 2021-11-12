@@ -1,8 +1,8 @@
 # 2. Export Model to FMU in OpenModelica
 
 <div class="w3-panel w3-theme-l4 w3-border w3-display-container">
-  <h3>Under construction</h3>
-  <p>This section is under construction and instruction may fail as new version of Open Modelica was not tested yet properly with an option to export FMU with CVODE solver.</p>
+"Explicit Euler" solver is here mentioned and supported by following compiler tool. 
+OpenModelica since 1.16 can export FMU with "CVODE" solver, but it is not yet supported by the following compiler tool.
 </div>
 
 In this step we will export a Modelica model into FMU in Co-Simulation mode using OpenModelica tool. If you use Dymola - follow previous section and skip this section.
@@ -17,9 +17,9 @@ In this step we will export a Modelica model into FMU in Co-Simulation mode usin
 ## Open Model File
 
 Open a Modelica model you would like to use in web simulator. 
-* In this guide, we will open Physiolibrary[^1] via `File -> System Libraries -> Physiolibrary`
+* In this guide, we will open Physiolibrary ^[https://www.physiolibrary.org free open-source Modelica library designed for modeling human physiology. ] via `File -> System Libraries -> Physiolibrary`
 
-* and model of Hemodynamics by Fernandez de Cañete [^2] 
+* and implementation of model of Hemodynamics by Fernandez de Cañete ^[Kulhánek T, Tribula M, Kofránek J, Mateják M: Simple models of the cardiovascular system for educational and research purposes. MEFANET Journal 2014; 2(2); ISSN:1805-9171. Available at WWW: https://mj.mefanet.cz/mj-04140914.] 
 
 ![OM_MeursModel](OM_CaneteModel.png)
 
@@ -29,6 +29,9 @@ Open a Modelica model you would like to use in web simulator.
   * Version: `2.0`
   * Type: `Co-Simulation`
   * Move FMU: `/vagrant_data` or any other existing directory
+  * Solver for Co-Simulation: `Explicit Euler` ^[OpenModelica can export FMU in Co-simulation with "explicit Euler" solver or "CVODE" solver since OM version 1.16.
+    Use "explicit Euler" solver for further use in Bodylight.js-FMU-Compiler. "CVODE" solver is not yet supported by the compiler tool,
+    as it needs additional manual steps to do.]
   * Model Description Filter: `internal`
   * Include Source Code: checked <input type="checkbox" checked disabled/>
 
