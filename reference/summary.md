@@ -52,5 +52,5 @@
   * [Markdown with footnotes](summary.md#editor/mdfilefootnote.md)
   * [Markdown with Bodylight.js-Components](summary.md#editor/mdfilefmi.md)
   * [Upload File](summary.md#editor/uploadfile.md)
-  * [upgrade-model-and-fmu.md](editor/upgrade-model-and-fmu.md "mention")
+  * [Upgrade Model and FMU](editor/upgrade-model-and-fmu.md "mention")
 * [About](summary.md#about.md)
