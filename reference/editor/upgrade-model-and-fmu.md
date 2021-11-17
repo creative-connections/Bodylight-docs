@@ -13,7 +13,7 @@ To upgrade the compiled FMU (zip file with embedded WebAssembly in Javascript pr
 
 Based on stored labels, it will check and update reference values.
 
-![](../../.gitbook/assets/2e7gQAc60D.gif)
+![](../.gitbook/assets/2e7gQAc60D.gif)
 
 
 
