@@ -1,5 +1,3 @@
-# summary
-
 * [Bodylight](#index.md)
   * [Getting Started](#usage/gettingstarted.md)
   * [Components in MD](#usage/components2inmd.md)
