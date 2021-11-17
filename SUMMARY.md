@@ -22,6 +22,7 @@
     * [KATEX rendering maths in markdown](reference/editor/mdfilekatex.md)
     * [MD files HTML tags](reference/editor/mdfiletags.md)
     * [uploadfile](reference/editor/uploadfile.md)
+    * [Upgrade model and FMU](reference/editor/upgrade-model-and-fmu.md)
   * [example](reference/example/README.md)
     * [Animace](reference/example/animation.md)
     * [Animace s EKG](reference/example/animationecg.md)
