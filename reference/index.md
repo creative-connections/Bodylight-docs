@@ -22,8 +22,8 @@ The documentation is divided to:
 
 Step by step guide to create an in-browser simulator from Modelica model to interactive web simulator:
 
-The recommended workflow is in tutorials: <a class="w3-button w3-theme-d1" href="../tutorial/#basic.md">Basic Tutorial</a> and
-<a class="w3-button w3-theme-d1" href="../tutorial/#advanced.md">Advanced Tutorial</a>.
+The recommended workflow is in tutorials: <a class="w3-button w3-theme-d1" href="#../tutorial/basic.md">Basic Tutorial</a> and
+<a class="w3-button w3-theme-d1" href="#../tutorial/advanced.md">Advanced Tutorial</a>.
 
 ## Release notes 
 

@@ -8,7 +8,7 @@ In this step we will export a Modelica model into FMU in Co-Simulation mode usin
 
 * Start OMEdit.
 
-![OMStart](../img/OM\_Start.png)
+![OMstart](../img/OM\_start.png)
 
 ## Open Model File
 

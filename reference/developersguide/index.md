@@ -14,4 +14,4 @@ The other related tools and simulators:
 * https://github.com/creative-connections/VR - source code of prototype in AR/VR. Uses WebXR API in browser available in VR/AR devices. Rendered directly as static web pages at https://bodylight.physiome.cz/VR/
 * https://github.com/creative-connections/Bodylight-VirtualBody - source code of prototype in WebGL and some sample web simulators. Builds are rendered as static pages at https://bodylight.physiome.cz/Bodylight-VirtualBody/
 
-The project is developed in best effort - any issue can be reported via GITHUB issues. As open source project - contributors are welcomed, e.g. via pull request or for more frequent contributors as members of the dev team with push access to repositories.
+The project is developed in best effort - any issue can be reported via GITHUB issues. As open source project - contributors are welcome, e.g. via pull request or as members of the dev team with push access to repositories.

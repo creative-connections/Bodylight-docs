@@ -8,7 +8,7 @@ This tutorial will guide you from model source code to functional interactive we
 4. Web simulator in HTML or MARKDOWN is powered by the 'bodylight.bundle.js', which converts custom-element to interactive elements in web page.
 5. The further tutorial will guide you to produce set of Markdown documents enriched with bodylight web components.
 
-<a class="w3-button w3-theme-d1" href="#basic.md">Basic Tutorial</a> produce single page web simulator with one model and one chart.
+<a class="w3-button w3-theme-d1" href="#../tutorial/basic.md">Basic Tutorial</a> produce single page web simulator with one model and one chart.
 
-<a class="w3-button w3-theme-d1" href="#advanced.md">Advanced Tutorial</a> produce multi page web simulator with one model, several charts and animation.
+<a class="w3-button w3-theme-d1" href="#../tutorial/advanced.md">Advanced Tutorial</a> produce multi page web simulator with one model, several charts and animation.
 
