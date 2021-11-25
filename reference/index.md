@@ -4,9 +4,12 @@ Bodylight is suite of tools to integrate
 1. mathematical models in Modelica
 2. interactive animation in Adobe Animate, SVG, animated GIF
 3. basic and advanced charts for web (chartjs, plotly, dygraph)
-into web application to create interactive web simulators. 
-Standard visualisation of modern browsers can be used including, Canvas API, WebGL, WebXR. 
-Web application can be written in pure HTML or Markdown as interactive web documents with live in-browser simulators. 
+
+to create interactive web simulators with proper visualisation.
+
+Web simulators are in-browser therefore no server, no cloud or enhanced resources are required. Web simulators can be distributed as static web pages and following documentaiton utilizes great service of `github pages` to deliver examples. 
+
+Standard visualisation of modern browsers can be used including, Canvas API, WebGL, WebXR. Web application can be written in pure HTML or Markdown as interactive web documents with live in-browser simulators. 
 
 The documentation is divided to: 
 
