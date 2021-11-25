@@ -6,7 +6,7 @@ In this section we create input component which collect a user's input as a rang
 
 Click button <button>bdl-range</button> and a dialog will appear in left panel.
 
-![EditorRange](EditorRange.png)
+![EditorRange](../img/EditorRange.png)
 
 ## Range options
 
@@ -26,11 +26,11 @@ set the following options
 - maxlength: `2` 
   - length of the number dialog
 
-![EditorRange2](EditorRange2.png)
+![EditorRange2](../img/EditorRange2.png)
 ## Submit the component
 
 click the <button>Submit</button> button.
 
-![EditorRange2](EditorRange2.png)
+![EditorRange2](../img/EditorRange2.png)
 
 This creates a `bdl-range` component xml-tag in the editor panel - you may edit it's source code attributes. This also renders a slider in the preview panel.

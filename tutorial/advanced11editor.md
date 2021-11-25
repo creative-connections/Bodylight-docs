@@ -7,7 +7,7 @@ In this step we will open existing project created in Basic Tutorial and create 
 1. either from local installation of Bodylight-VirtualMachine at http://localhost:8080/editor/
 2. or from public static web page at https://bodylight.physiome.cz/Bodylight-Editor/
 
-![Editor](BodylightEditor1.png)
+![Editor](../img/BodylightEditor1.png)
 
 
 ## Open project ZIP file
@@ -16,7 +16,7 @@ If the editor already contains project created in Basic Tutorial, you may skip t
 
 You should see the basic project files:
 
-![EditorBasicFiles](EditorBasicFiles.png)
+![EditorBasicFiles](../img/EditorBasicFiles.png)
 
 
 ## Create a new file

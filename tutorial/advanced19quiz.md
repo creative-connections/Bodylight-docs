@@ -27,8 +27,8 @@ You may edit the quiz component attributes directly in editor or place cursor in
 
 See the quiz in preview panel.
 
-![QuizUnchecked](QuizUnchecked.png)
+![QuizUnchecked](../img/QuizUnchecked.png)
 
 If you check some answers and click <button>Submit</button> button, the correct answers will be displayed with explanation.
 
-![QuizChecked](QuizChecked.png)
+![QuizChecked](../img/QuizChecked.png)

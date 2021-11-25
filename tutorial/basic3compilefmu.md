@@ -19,25 +19,25 @@ vagrant up
 
 The port 8080 is redirected by default to guest virtual machine web server at port 80. Thus access the compiler web service using host browser at http://localhost:8080/compiler/ :
 
-![Compiler0](Compiler_Upload0.png)
+![Compiler0](../img/Compiler_Upload0.png)
 
 ## Select the FMU file
 
 Click the <button>Browse</button> button and select the FMU file from previous step
 
-![Compiler1](Compiler_Upload1.png)
+![Compiler1](../img/Compiler_Upload1.png)
 
 ## Click Upload
 
 After selecting the FMU File, click <button>Upload</button> button to start the compilation process.
 
-![Compiler2](Compiler_Upload2.png)
+![Compiler2](../img/Compiler_Upload2.png)
 
 ## See the Compilation Process
 
 The compilation process should produce the resulting ZIP file after 30-60s.
 
-![Compiler3](Compiler_Compilation.png)
+![Compiler3](../img/Compiler_Compilation.png)
 
 If the process failed consult output logs.
 Otherwise proceed with the resulting ZIP file into next step. 

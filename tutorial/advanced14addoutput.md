@@ -14,14 +14,14 @@ Go to editor and place cursor inside the `<bdl-fmi></bdl-fmi>` element and click
 
 This will identify the attributes of fmi component and shows dialog.
 
-![EditorFmiIdentify](EditorFmiIdentify.png)
+![EditorFmiIdentify](../img/EditorFmiIdentify.png)
 
 
 ## Select mitral valve variable
 
 In the output variable input field start typing: `mitral`
 
-![EditorFmiMitral](EditorFmiMitral.png)
+![EditorFmiMitral](../img/EditorFmiMitral.png)
 
 
 If you see list of available variables click on `mitralValve.open` and
@@ -37,7 +37,7 @@ Using the same procedure find and add the other variables:
 
 After you added all these variables you should see the list:
     
-![EditorFmiValves](EditorFmiValves.png)
+![EditorFmiValves](../img/EditorFmiValves.png)
 
 ## Submit fmi component
 Click <button>Submit</button> button. This will replace existing `<bdl-fmi></bdl-fmi>` component definition with the new one.

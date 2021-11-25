@@ -13,7 +13,7 @@ You may need at least "Binary Mode Export" or "Source Code Generation" license i
 
 * Check appropriate license in `Help -> License -> Detail` as seen in this screenshot:
 
-![Dymola Licence](Dymola_License.png)
+![Dymola Licence](../img/Dymola_License.png)
 
 
 ## Open Model File
@@ -21,12 +21,12 @@ You may need at least "Binary Mode Export" or "Source Code Generation" license i
 Open a Modelica model you would like to use in web simulator. 
 * In this guide, we will open Physiolibrary[^1]
 
-![Dymola Physiolibrary](Dymola_Physiolibrary.png)
+![Dymola Physiolibrary](../img/Dymola_Physiolibrary.png)
 
 
 * and model of Hemodynamics by Fernandez de Cañete [^2] 
 
-![Dymola_Fernandez](Dymola_CaneteModel.png)
+![Dymola_Fernandez](../img/Dymola_CaneteModel.png)
 
 ## Setup FMU Export options
 * Open `Simulation (tab) -> Simulation -> Setup`
@@ -35,19 +35,19 @@ Open a Modelica model you would like to use in web simulator.
   * Version: `2.0`
   * Options: `Include source code`
 
-![Dymola FMU Settings](Dymola_FMUSettings.png)
+![Dymola FMU Settings](../img/Dymola_FMUSettings.png)
 
 ## Do FMU Export
   * `Simulation -> Translate -> FMU`
 
-![Dymola FMU Export](Dymola_FMUExport.png)
+![Dymola FMU Export](../img/Dymola_FMUExport.png)
 
 ## Use FMU file
 
 Last step created a file with `.fmu` extension in current working directory.
 Check it in your file system. 
 
-![cmd FMUFile](cmd_FMUFile.png)
+![cmd FMUFile](../img/cmd_FMUFile.png)
 
 
 Use this file in following section

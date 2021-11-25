@@ -7,7 +7,7 @@ Open Bodylight-Editor
 1. either from Bodylight-VirtualMachine using host browser at http://localhost:8080/editor/
 2. or from public static web page at https://bodylight.physiome.cz/Bodylight-Editor/
 
-![Editor](BodylightEditor1.png)
+![Editor](../img/BodylightEditor1.png)
 
 ## Create new project
 

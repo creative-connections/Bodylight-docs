@@ -17,11 +17,11 @@ Set these options
 * fmin: `0` - this is value of model variable for closed valve
 * fmax: `1` - this is value of model variable for opened valve
 
-![EditorBind2a](EditorBind2a1.png)
+![EditorBind2a](../img/EditorBind2a1.png)
 
 Note that value from model simulation between `fmin` and `fmax` is linearry converted to values between `amin` and `amax` as in following draft:
 
-![ModelAnimateConversion](ModelAnimateConversion.png)
+![ModelAnimateConversion](../img/ModelAnimateConversion.png)
 
 ## Test animation object
 

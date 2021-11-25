@@ -43,4 +43,4 @@ Thus current conversion is literaly expression So the showed value is computed a
 
 Play the simulation by button  for couple of seconds then stop it . The pressure should be among 80 and 120 mmHg.
 
-![EditorSimChart2](EditorSimChart2.png)
+![EditorSimChart2](../img/EditorSimChart2.png)

@@ -34,7 +34,7 @@ Then click <button>Submit</button> button and a component definition will appear
 
 If all goes well, the animation should render at the right part of the preview panel.
 
-![EditorAnimateObj](EditorAnimateObj.png)
+![EditorAnimateObj](../img/EditorAnimateObj.png)
 
 
 

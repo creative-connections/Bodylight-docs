@@ -29,13 +29,13 @@ set the following options
 * refvalues: `1`
   * number of variables to be displayed from the reference index
 
-![EditorChart1](EditorChart1.png)
+![EditorChart1](../img/EditorChart1.png)
 
 ## Submit the component
 
 Click submit.
 
-![EditorChartPreview](EditorChartPreview.png)
+![EditorChartPreview](../img/EditorChartPreview.png)
 
 This creates a `bdl-chartjs-time` component xml tag in the editor panel and renders a chart in the preview panel.
 
@@ -43,4 +43,4 @@ This creates a `bdl-chartjs-time` component xml tag in the editor panel and rend
 
 Click the play  to check whether simulation starts.
 
-![EditorChartPlay](EditorChartPlay.png)
+![EditorChartPlay](../img/EditorChartPlay.png)

@@ -50,4 +50,4 @@ Now you can check animation during simulation. Play the simulation by button  an
 
 Note that there is linear tranformation between model variable value and animation, if the value exceeds the minimum or maximum limit, the maximal or minimal value is animated/shown in animation without scaling down or up.
 
-![EditorHeartSimulator](EditorHeartSimulator.png)
+![EditorHeartSimulator](../img/EditorHeartSimulator.png)

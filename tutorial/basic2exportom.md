@@ -8,7 +8,7 @@ In this step we will export a Modelica model into FMU in Co-Simulation mode usin
 
 * Start OMEdit.
 
-![OMStart](OM\_Start.png)
+![OMStart](../img/OM\_Start.png)
 
 ## Open Model File
 
@@ -17,7 +17,7 @@ Open a Modelica model you would like to use in web simulator.
 * In this guide, we will open Physiolibrary ^\[https://www.physiolibrary.org free open-source Modelica library designed for modeling human physiology. ] via `File -> System Libraries -> Physiolibrary`
 * and implementation of model of Hemodynamics by Fernandez de Cañete ^\[Kulhánek T, Tribula M, Kofránek J, Mateják M: Simple models of the cardiovascular system for educational and research purposes. MEFANET Journal 2014; 2(2); ISSN:1805-9171. Available at WWW: https://mj.mefanet.cz/mj-04140914.]
 
-![OM\_MeursModel](OM\_CaneteModel.png)
+![OM\_MeursModel](../img/OM\_CaneteModel.png)
 
 ## Setup FMU Export options
 
@@ -30,18 +30,18 @@ Open a Modelica model you would like to use in web simulator.
   * Model Description Filter: `internal`
   * Include Source Code: checked&#x20;
 
-![OM\_FMUSettings](OM\_FMUSettings.png)
+![OM\_FMUSettings](../img/OM\_FMUSettings.png)
 
 ## Do FMU Export
 
 * right click on the selected model and select `Export -> FMU`
 
-![OM\_FMUExport](OM\_FMUExport.png)
+![OM\_FMUExport](../img/OM\_FMUExport.png)
 
 ## Use FMU file
 
 Last step created a file with `.fmu` extension in directory set in step 2.2 Check it in your file system.
 
-![bash\_FMUFile](bash\_FMUFile.png)
+![bash\_FMUFile](../img/bash\_FMUFile.png)
 
 And use this file in following section.
