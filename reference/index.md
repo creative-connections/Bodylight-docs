@@ -1,9 +1,12 @@
 # Introduction
 
-Bodylight is suite of tools to integrate technology of mathematical modeling in Modelica, 
-interactive animation in Adobe Animate or SVG, 
-visualisation in WebGL or HTML Canvas and
-standard web publishing in HTML (or Markdown) as interactive web documents with live in-browser simulators. 
+Bodylight is suite of tools to integrate 
+1. mathematical models in Modelica
+2. interactive animation in Adobe Animate, SVG, animated GIF
+3. basic and advanced charts for web (chartjs, plotly, dygraph)
+into web application to create interactive web simulators. 
+Standard visualisation of modern browsers can be used including, Canvas API, WebGL, WebXR. 
+Web application can be written in pure HTML or Markdown as interactive web documents with live in-browser simulators. 
 
 The documentation is divided to: 
 
@@ -13,12 +16,21 @@ The documentation is divided to:
 
 <a class="w3-button w3-theme-d1" href="#example/index.md">Examples</a> - selected more complex examples using Bodylight.js Components
 
-How to create an in-browser simulator from Modelica model? 
+<a class="w3-button w3-theme-d1" href="#example/index.md">Developer's Guide</a> - tools and instruction how to transform Modelica model into JS with WebAssembly, Bodylight-Editor helper tool to facilitate setting of web components, source codes etc.
+
+Step by step guide to create an in-browser simulator from Modelica model to interactive web simulator:
+
 The recommended workflow is in tutorials: <a class="w3-button w3-theme-d1" href="../tutorial/#basic.md">Basic Tutorial</a> and
 <a class="w3-button w3-theme-d1" href="../tutorial/#advanced.md">Advanced Tutorial</a>.
 
 ## Release notes 
 
+Bodylight.js 2.1
+  * tested with first prototypes and many improvements
+  * updated dependent chart.js to 2.9.6
+  * plotly and it's dependency removed - if using plotly charts, need to additionally include plotly.js into web page
+  * added `oneshot` and `contiunous` mode into `bdl-fmi` component to allow simulation step to be done at start and at each parameter change
+  * improved tools (Bodylight-Editor, Bodylight-Compiler compiles models from OpenModelica with Euler solver)
 Bodylight.js 2.0 compared to Bodylight.js v1.0
   * v2.0 do not need of special tool to create web simulator - HTML or Markdown syntax with custom-elements can be edited in any text editor.
   * features of Bodylight.js Composer v1.0 was split into several independent subsystems - Bodylight.js-Components, Bodylight-Editor, Bodylight-VirtualBody (3D visualization)   
