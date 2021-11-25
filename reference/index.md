@@ -36,6 +36,7 @@ Bodylight.js 2.1
   * plotly and it's dependency removed - if using plotly charts, need to additionally include plotly.js into web page
   * added `oneshot` and `contiunous` mode into `bdl-fmi` component to allow simulation step to be done at start and at each parameter change
   * improved tools (Bodylight-Editor, Bodylight-Compiler compiles models from OpenModelica with Euler solver)
+
 Bodylight.js 2.0 compared to Bodylight.js v1.0
   * v2.0 do not need of special tool to create web simulator - HTML or Markdown syntax with custom-elements can be edited in any text editor.
   * features of Bodylight.js Composer v1.0 was split into several independent subsystems - Bodylight.js-Components, Bodylight-Editor, Bodylight-VirtualBody (3D visualization)   
