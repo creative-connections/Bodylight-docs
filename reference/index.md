@@ -7,9 +7,10 @@ Bodylight is suite of tools to integrate
 
 to create interactive web simulators with proper visualisation.
 
-Web simulators are in-browser therefore no server, no cloud or enhanced resources are required. Web simulators can be distributed as static web pages and following documentaiton utilizes great service of `github pages` to deliver examples. 
+Web simulators are in-browser therefore no server, no cloud or enhanced resources are required. 
 
-Standard visualisation of modern browsers can be used including, Canvas API, WebGL, WebXR. Web application can be written in pure HTML or Markdown as interactive web documents with live in-browser simulators. 
+Web simulators can be distributed as static web pages. As proper example - the following documentation includes live web simulators
+utilizing great service of `GITHUB-PAGES` to deliver static web content. 
 
 The documentation is divided to: 
 
@@ -17,11 +18,11 @@ The documentation is divided to:
 
 <a class="w3-button w3-theme-d1" href="#usersguide/index.md">Reference guide</a> - reference guide to collection of custom elements enhancing HTML following Web Components standard implemented in HTML and Javascript (ES6). 
 
-<a class="w3-button w3-theme-d1" href="#example/index.md">Examples</a> - selected more complex examples using Bodylight.js Components
+<a class="w3-button w3-theme-d1" href="#example/index.md">Examples</a> - selected more complex examples using Bodylight.js Components.
 
 <a class="w3-button w3-theme-d1" href="#editor/tools.md">Tools</a> - tools and instruction how to transform Modelica model into JS with WebAssembly, Bodylight-Editor helper tool to facilitate setting of web components,
 
-<a class="w3-button w3-theme-d1" href="#developersguide/index.md">Developer's Guide</a> - source codes.
+<a class="w3-button w3-theme-d1" href="#developersguide/index.md">Developer's Guide</a> - source codes and links to other tools.
 
 Step by step guide to create an in-browser simulator from Modelica model to interactive web simulator:
 
