@@ -2,7 +2,7 @@ Bodylight.js v 2.1 was developed under grants MPO, therefore all source codes ar
 
 The majority of Bodylight.js and related stuff is in https://github.com/creative-connections/
 
-* https://github.com/creative-connections/aurelia-bodylight-plugin - core source codes of Bodylight.js web components build in awesome htpps://aurelia.io framework
+* https://github.com/creative-connections/aurelia-bodylight-plugin - core source codes of Bodylight.js web components build in awesome https://aurelia.io framework
 * https://github.com/creative-connections/Bodylight.js-Components - wrapper to transform above framework related into standard web components, framework agnostic and independent bundle. This one is released into NPM.
 
 The other related tools and simulators:

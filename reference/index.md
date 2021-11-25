@@ -16,7 +16,9 @@ The documentation is divided to:
 
 <a class="w3-button w3-theme-d1" href="#example/index.md">Examples</a> - selected more complex examples using Bodylight.js Components
 
-<a class="w3-button w3-theme-d1" href="#example/index.md">Developer's Guide</a> - tools and instruction how to transform Modelica model into JS with WebAssembly, Bodylight-Editor helper tool to facilitate setting of web components, source codes etc.
+<a class="w3-button w3-theme-d1" href="#editor/tools.md">Tools</a> - tools and instruction how to transform Modelica model into JS with WebAssembly, Bodylight-Editor helper tool to facilitate setting of web components,
+
+<a class="w3-button w3-theme-d1" href="#developersguide/index.md">Developer's Guide</a> - source codes.
 
 Step by step guide to create an in-browser simulator from Modelica model to interactive web simulator:
 
