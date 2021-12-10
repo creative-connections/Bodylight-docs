@@ -15,7 +15,7 @@ Sample:
     name="ZelezoCelek"
     fromid="id4" ></bdl-animate-adobe> 
 ``` 
-* `src` - link to exported JS file from Adobe Animate, should be deployed locally next to web simulator document
+* `src` - relative or absolute URL location of the JS file from Adobe Animate. It should be accessible from the same context as the web simulator page.
 * `width` - width of the canvas (default 800px)
 * `height` - height of the canvas (default 600px)
 * `name` - name of the object exported in JS, should be taken from JS file, usually same as filename. 
@@ -63,6 +63,8 @@ Example binding model variables to animation objects:
 ```xml
 <div class="w3-row">
   <div class="w3-third">
+    Press buttons to start stop animation or to do a animation step:
+    
     <bdl-animate-adobe-control id="id4"></bdl-animate-adobe-control>
   </div>
   <div class="w3-twothird">
@@ -77,6 +79,9 @@ Example binding model variables to animation objects:
 ```
 <div class="w3-row">
   <div class="w3-third">
+
+  Press buttons to start stop animation or to do a animation step:
+
 <bdl-animate-adobe-control id="id4"></bdl-animate-adobe-control>
   </div>
   <div class="w3-twothird">
