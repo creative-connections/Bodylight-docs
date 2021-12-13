@@ -1,24 +1,9 @@
-## BdlChartjs BdlChartjs-time BdlChartjs-xy
+Chartjs components utilizes the library **chartjs** from https://chartjs.org 
+The library version 2.9.4 is embedded in `bodylight.bundle.js`.
 
-### ChartJS
+## `bdl-chartjs`  
 
-<div class="w3-row">
-<div class="w3-quarter">
-
-
-Creates a chartjs element controlled by BdlChartjs library.
-<bdl-chartjs 
-  id="id9" 
-  width="300" 
-  height="500" 
-  fromid="id4" 
-  type="doughnut" 
-  labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
-  initialdata="0,4,2,3" 
-  refindex="2" 
-  refvalues="6"></bdl-chartjs>
-</div>
-<div class="w3-rest">
+Creates basic chartjs graph from current data. 
 
 ```xml
 <bdl-chartjs 
@@ -35,61 +20,170 @@ Creates a chartjs element controlled by BdlChartjs library.
   animation="true"
   convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>
 ``` 
-  * `width,height` initial size of canvas to draw chart
-  * `responsive` by default is `false`, if `true` then chart is rescaled by the current size of the browser window
-`convertors` are separated by semicolon ';' per each variable. 
- If convertors are defined then raw data obtained from fmi - via refvalues are converted 
-as follows: 
-  * `convertors = "numerator,denominator"`, then `y=x*numerator/denominator`
-  * `convertors = "expression with x"`, then `y=expression with x`
-  
-By default - no convertors - raw data (usually in SI) are presented in chart.
-  * `animate` - if `true`, smooth animation (by 500 ms) when data is updated. Default `false`.
-  * `sectionid` - if set, then listens the component with this id for 'addsection' event, bind it to `bdl-animatecontrol` component
-  </div>
-  </div>
-  
-### ChartJS time
-  * `min` - set min for y scale - sets chart.js `options.scales.y.min`
-  * `max` - set max for y scale - sets chart.js `options.scales.x.min`
-<div class="w3-row">
-  <div class="w3-quarter">
+* `fromid` - reference to component sending fmu data, usually id of `bdl-fmi` component
+* `labels` - comma separated labels of dataset
+* `refindex` - index in reference value array within fmu data sent by `bdl-fmi` component
+* `refvalues` - number of values to be red from the refindex
+* `type` - type of chart; available from chartjs library, default `doughnut`, possible values `line`, `bar`, `radar`,`doughnut`, `pie`, `polarArea`
+* `initialdata=''` - comma separated values of initial data (for more datasets use semicolon `;` - not used in basic charts)
+* `width=300`  - width of chart canvas in px
+* `height=200` - height of chart canvas in px
+* `animate=false` - if `true`, smooth animation (by 500 ms) when data is updated. Default `false`.
+* `id` - (optional) unique id of component;
+* `ylabel` - label on y axis
+* `xlabel` - label on x axis
+* `convertors` - convertors separated by semicolon per variable ';' to convert raw data taken from fmu into visualisation in 
+  * EITHER `numerator,denominator,addend` $$x_{converted} = \frac{x_{original} * numerator}{denominator} + addend$$
+  * OR `expression with x`, $$x_{converted} = expression with x_{original} $$
+* `generatelabels=false` - if true, labels for dataset are generated as 'variable 1' .. ' variable n'
+* `responsive = false` - if `true`, canvas is rescaled per available space, `false` - to keep width and height
+* `canvasobj` - if defined then use this object name to get canvas object. E.g. to draw chart to another environment (e.g. surface in VR or AR)
+* `throttle=200` - time to throttle chart update, `0` - no throttle - update on every data change, `200` - wait 200 ms to update, chart data may change more frequently  
+* `precision=4` - precision to be displayed in tooltips when hovering mouse over
 
-`<bdl-chartjs-time></bdl-chartjs-time>` time series in chartjs.
 
-<bdl-chartjs-time  
-  id="id10" 
+Examples - 6 types of charts `doughnut, line, bar, radar, pie, polarArea`
+
+```xml
+<bdl-chartjs 
+  id="id9" 
   width="300" 
-  height="500" 
+  height="500"
+  responsive="false"  
   fromid="id4" 
-  labels="Pressure in Aorta,Pressure in Left Ventricle, Intrathoracic Artery Volume, Extrathoracic Arteries Volume, Pulmonary Arteries Volume, Intrathoracic Veins Volume"
-  initialdata="0,1,2,3,4;2,2,2,2;3,2,4;1,5,3;2,2,3,2" 
-  refindex="2"   
-  refvalues="6"></bdl-chartjs-time>
+  type="doughnut" 
+  labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
+  initialdata="0,4,2,3" 
+  refindex="2" 
+  refvalues="6"
+  animation="true"
+  convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>
+```
+<div class="w3-row">
+<div class="w3-quarter">
+<bdl-chartjs
+id="id9"
+width="300"
+height="500"
+responsive="false"  
+fromid="id4"
+type="doughnut"
+labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
+initialdata="0,4,2,3"
+refindex="2"
+refvalues="6"
+animation="true"
+convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>
+</div><div class="w3-quarter">
 
-  </div>
-  <div class="w3-rest">
-Example:
+<bdl-chartjs
+id="id9"
+width="300"
+height="500"
+responsive="false"  
+fromid="id4"
+type="line"
+labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
+initialdata="0,4,2,3"
+refindex="2"
+refvalues="6"
+animation="true"
+convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>
+</div><div class="w3-quarter">
+<bdl-chartjs
+id="id9"
+width="300"
+height="500"
+responsive="false"  
+fromid="id4"
+type="bar"
+labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
+initialdata="0,4,2,3"
+refindex="2"
+refvalues="6"
+animation="true"
+convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>  
+</div><div class="w3-quarter">
+<bdl-chartjs
+id="id9"
+width="300"
+height="500"
+responsive="false"  
+fromid="id4"
+type="radar"
+labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
+initialdata="0,4,2,3"
+refindex="2"
+refvalues="6"
+animation="true"
+convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>
+</div><div class="w3-quarter">
+<bdl-chartjs
+id="id9"
+width="300"
+height="500"
+responsive="false"  
+fromid="id4"
+type="pie"
+labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
+initialdata="0,4,2,3"
+refindex="2"
+refvalues="6"
+animation="true"
+convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>
+</div><div class="w3-quarter">
+<bdl-chartjs
+id="id9"
+width="300"
+height="500"
+responsive="false"  
+fromid="id4"
+type="polarArea"
+labels="Intrathoracic Arteries,ExtraThoracic Arteries, Pulmonary Arteries, Intrathoracic Veins, Extrathoracic veins, Pulmonary Veins"
+initialdata="0,4,2,3"
+refindex="2"
+refvalues="6"
+animation="true"
+convertors="numerator1,denominator1;numerator2,denominator2"></bdl-chartjs>
+</div>
+</div>
 
+## `bdl-chartjs-time`
+Special case of `bdl-chartjs` for line type charts in time series. FMU data contains time point data was taken, the X axis contains this time, Y axis contains data remembered in each fmu data point. Additional attributes
+* `min` - (optional) set min for y scale - sets chart.js `options.scales.y.min`
+* `max` - (optional) set max for y scale - sets chart.js `options.scales.x.min`
+* `maxdata=256` - max data to remember, after the buffer is full, the first data are taken away from the buffer 
+* `verticalline=false` - verticalline plugin - will show vertical line in each segment - use with `sectionid`
+* `sectionid` - if set, then listens the component with this id for 'addsection' event, bind it to `bdl-animate-control` component, use it with `verticalline=true`
+ 
+### Example
 ```xml
 <bdl-chartjs-time  
   id="id10" 
   width="300" 
   height="500" 
   fromid="id4" 
-  labels="Pressure in Aorta,Pressure in Left Ventricle, Intrathoracic Artery Volume, Extrathoracic Arteries Volume, Pulmonary Arteries Volume, Intrathoracic Veins Volume"
-  initialdata="0,1,2,3,4;2,2,2,2;3,2,4;1,5,3;2,2,3,2" 
+  labels="Pressure in Aorta,Pressure in Left Ventricle, Pressure in Left Atria"
+  initialdata="0,1,2,3,4,5,6,7,8,9,10;80,100,120,115,110,105,100,95,90,85;20,25,30,28,26,24,22,20,18,16;20,100,120,115,110,27,25,23,21,19,17" 
   refindex="2"   
-  refvalues="6"></bdl-chartjs-time>
-
+  refvalues="3"></bdl-chartjs-time>
 ```
 
-  </div>
-</div>
+<bdl-chartjs-time  
+  id="id10" 
+  width="300" 
+  height="500" 
+  fromid="id4" 
+  labels="Pressure in Aorta,Pressure in Left Ventricle, Pressure in Left Atria"
+  initialdata="0,1,2,3,4,5,6,7,8,9,10;80,100,120,115,110,105,100,95,90,85;20,25,30,28,26,24,22,20,18,16;20,100,120,115,110,27,25,23,21,19,17" 
+  refindex="2"   
+  refvalues="3"></bdl-chartjs-time>
 
-### BdlChartjs-xy
 
-XY chart from data
+## `bdl-chartjs-xy`
+
+XY chart from data. The first variable is X axis, Second variable is Y axis - `maxdata` are taken same as in `chartjs-time`.
+
 
 ```xml
 <bdl-chartjs-xy id="id10" width="400" height="400" fromid="id4" 
@@ -102,9 +196,9 @@ where `initialdata` may contain additional static curves after first values
 delimite by `;` there might be x values delimited by `,` followed by y values delimited by `,`
 and so on. 
 
-## bdl-chartjs-barplot
+## `bdl-chartjs-barplot`
 
-barplot chart with minimum/maximum and normal range
+barplot chart with extreme limits and normal limits to be shown
 ```xml
 <bdl-chartjs-barplot
   id="id11"
