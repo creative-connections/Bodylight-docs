@@ -57,6 +57,33 @@ Example binding model variables to animation objects:
 <bdl-bind2a findex="14" aname="ValveTV_anim" amin="99" amax="0" fmin="0" fmax="1"></bdl-bind2a>
 <bdl-bind2a findex="15" aname="ValvePV_anim" amin="0" amax="99" fmin="0" fmax="1"></bdl-bind2a>
 ```
+## `bdl-bind2a-text`
+defines binding between FMU simulation variable and animation object text value
+* `findex` index of variable in fmu array
+* `aname` name of animation component in AA (can go deep using dot `.` notation, see example bellow)
+* `convertor` optional convertor - in form of 'numerator,denominator' or '1/x' or 'some algebraic expression with x' (e.g.'x^2' or '365-1/x'), displayed is converted value
+* `precision` - if defined the value is converted to string using method toPrecision(precision). E.g. `precision=3` converts `152.635` to `152`
+* `fixed` - if defined the value is converted to string using method toFixed(fixed), E.g. `fixed=2` shows PI to `152.635` to `152.64` 
+
+```
+<bdl-bind2a-text findex="8" aname="Hodnota5_text" convertor="1,0.237"></bdl-bind2a-text>
+<bdl-bind2a-text findex="7" aname="Hodnota2Cerveny_text" convertor="1,3.612"></bdl-bind2a-text>
+<bdl-bind2a-text findex="4" aname="Hodnota4_text" convertor="1,0.7428"></bdl-bind2a-text>
+<bdl-bind2a-text findex="5" aname="Hodnota3_text" convertor="1,2.228"></bdl-bind2a-text>
+<bdl-bind2a-text findex="18" aname="Hodnota9_text" convertor="1,1.51"></bdl-bind2a-text>   
+```
+
+## `bdl-bind2a-play`
+
+defines binding between FMU simulation variable and playable animation object value
+* `findex` index of variable in fmu array
+* `aname` name of animation component in AA (can go deep using dot `.` notation, see example bellow)
+* `limit` default `1e-12` - if the value of FMU variable goes over this limit, then animation is started - otherwise animation is stopped.
+
+```
+<bdl-bind2a-play findex="8" aname="circle1"></bdl-bind2a-play>
+<bdl-bind2a-play findex="7" aname="circle2" limit="1.5"></bdl-bind2a-play>
+```
 
 ## Example
 
