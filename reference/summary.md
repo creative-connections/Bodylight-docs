@@ -33,7 +33,7 @@
   * [FMI - simulation\
     of Modelica model](#usersguide/fmi.md)
   * [Receptacle](#usersguide/receptacle.md)
-  * [Animate](#usersguide/animate.md)
+  * [Animate GIF](#usersguide/animate.md)
   * [Animate Adobe](#usersguide/adobe.md)
   * [Audio](#usersguide/audio.md)
   * [Beaker](#usersguide/beaker.md)
