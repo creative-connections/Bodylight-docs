@@ -1,10 +1,13 @@
 # Virtual machine for Bodylight.js
 
-This repository contains Vagrant scripts to prepare virtual machine in VirtualBox from scratch or from preinstalled binary image. After installation Scientific Linux (clone of Redhat Enterprise Linux) and OpenModelica, Bodylight.js, Python 3.x, Julia, Jupyter, Anaconda is available. See web apps after installation at http://localhost:8080.
+The repository at https://github.com/creative-connections/Bodylight-VirtualMachine contains `vagrant` scripts to prepare virtual machine in VirtualBox 
+either from scratch or from preinstalled binary image. The base image is Scientific Linux 7 (clone of RHEL 7). 
+After first `vagrant up` Bodylight.js anr all reated tools, OpenModelica, Python 3.x, Julia, Jupyter, Anaconda is available. See web apps after installation at http://localhost:8080 
 
 ## Motivation
 
-Vagrant tool automates configuration (port forwarding, secure ssh keys, shared folders) and provisioning of virtual machine. Thus preventing claims `works on my machine` or `doesn't work on my machine`. Virtual machine is a reference installation to compare with different environments.
+Vagrant tool automates configuration (port forwarding, secure ssh keys, shared folders) and provisioning of virtual machine. Thus preventing claims `works on my machine` or `doesn't work on my machine`. 
+Virtual machine is a reference installation to compare with different environments.
 
 ## Requirements
 
@@ -21,7 +24,7 @@ Some OS has their own distribution of `vagrant`, `virtualbox` and `git`, so you 
 
 **(Optional)** This is not required, but recommended step to clone repository of demo Jupyter notebooks and/or Physiolibrary-models next to the Bodylight-VirtualMachine on host machine,
 it will appear as /vagrant_data in virtual machine and will be available for jupyter notebook after installation.
-In command-line (Linux `xterm`, `bash` etc. for Windows `Start-> type 'cmd' -> choos 'Command Prompt'`) do:
+In command-line (Linux `xterm`, `bash` etc. for Windows `Start-> type 'cmd' -> choose 'Command Prompt'`) do:
 ```bash
 git clone https://github.com/creative-connections/Bodylight-notebooks.git
 git clone https://github.com/creative-connections/Physiolibrary-models.git
@@ -109,7 +112,7 @@ If you don't need VM, you can halt it using Virtualbox UI or using
 ```bash
 vagrant halt
 ```
-If you need VM, you can boot it again using:
+If you need VM, you can boot it again using (second and subsequent boot takes couple of seconds):
 ```bash
 vagrant up
 ```
@@ -117,39 +120,26 @@ To restart VM
 ```bash
 vagrant reload
 ```
-The second and other `vagrant up`is rapid and should take couple of seconds, because time consuming provisioning (bootstrap scripts) is already done.
+The second and subsequent `vagrant up`is rapid and should take couple of seconds, because time consuming provisioning (bootstrap scripts) is already done.
 
 ## Bootstrap scripts
 
 Installation scripts are preserved in `/scripts` directory, they are launched only when `vagrant up`is made first or when provisioning is explicitly requested by `vagrant up --provision`.
 
-### Halt VM
-To stop VM.
-```bash
-vagrant halt
-```
-To start VM again - it wil start quickly as bootstrap is not needed
-```bash
-vagrant up
-```
-To restart VM
-```bash
-vagrant reload
-```
 ## Clean, Uninstall
 
-To destroy VM and remove all VM files do the following. The files stored in shared folders /vagrant and /vagrant_data are preserved.
+To destroy VM and remove all VM files and free up disk space do the following. The files stored in shared folders /vagrant and /vagrant_data are preserved.
 
 ```bash
 vagrant destroy
 ```
 
-There are preserved OpenModelica and Python (Anaconda) installation binaries in `/cache` directory. Delete cache if you don't need it anymore
+There are preserved OpenModelica and Python (Anaconda) installation binaries in `/cache` directory (up to 1GB). Delete cache if you don't need it anymore
 ```bash
 rm -rf cache
 ```
 
-References:
+## References
 
 * [1] https://github.com/OpenModelica/jupyter-openmodelica
 * [2] https://openmodelica.org/
