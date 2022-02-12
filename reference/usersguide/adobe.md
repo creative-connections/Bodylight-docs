@@ -1,8 +1,15 @@
 These components can be used to place graphics exported from Adobe Animate using CreateJS library and control it's animatable objects by model variables and 
 start/stop animation on model start or user request by pressing buttons.
 
+## bdl-animate-adobe-ss
+This component can visualise animation which is exported as multiple spreadsheets. These are handled little bit different, sso use it with the following syntax
+```xml
+<bdl-animate-adobe-ss src="exporttedfile.js" name="name of the object"><bdl-animate-ss>
+```
+The animation is placed responsive by default as div. No other binding is possible.  
+
 ## `bdl-animate-adobe`
-Basic component, renders the exported animation into the HTML canvas. 
+Basic component, renders the exported animation into the HTML canvas. Use this component for binding among FMU variable and animatable object.
 
 There should be only one such animation component in a page.
 
