@@ -76,5 +76,6 @@
         * [Upload File](#editor/uploadfile.md)
         * [Upgrade Model and FMU](#editor/upgrade-model-and-fmu.md)
         * [Test Animation](#editor/animatefiletest.md)
+        * [Preview Image](#editor/imagefilepreview.md)
 * [Developer's Guide](#developersguide/index.md)
 * [About](#about.md)
