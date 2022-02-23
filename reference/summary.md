@@ -75,5 +75,6 @@
         * [Markdown with Bodylight.js-Components](#editor/mdfilefmi.md)
         * [Upload File](#editor/uploadfile.md)
         * [Upgrade Model and FMU](#editor/upgrade-model-and-fmu.md)
+        * [Test Animation](#editor/animatefiletest.md)
 * [Developer's Guide](#developersguide/index.md)
 * [About](#about.md)
