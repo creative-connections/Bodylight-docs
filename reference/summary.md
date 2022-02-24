@@ -77,5 +77,6 @@
         * [Upgrade Model and FMU](#editor/upgrade-model-and-fmu.md)
         * [Test Animation](#editor/animatefiletest.md)
         * [Preview Image](#editor/imagefilepreview.md)
+        * [Sync with GITHUB](#editor/githubsync.md)
 * [Developer's Guide](#developersguide/index.md)
 * [About](#about.md)
