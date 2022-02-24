@@ -13,4 +13,5 @@ It's possible to sync with github account.
 4. If you made lot of changes or want  to transfer full project to github - click `Upload all` to transfer all content from editor to github
 
 Sample demo downloading full project in the following screencast
+
 ![githubsyncscreencast](images/githubsyncscreencast.gif)
