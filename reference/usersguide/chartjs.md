@@ -22,8 +22,8 @@ Creates basic chartjs graph from current data.
 ``` 
 * `fromid` - reference to component sending fmu data, usually id of `bdl-fmi` component
 * `labels` - comma separated labels of dataset
-* `refindex` - index in reference value array within fmu data sent by `bdl-fmi` component
-* `refvalues` - number of values to be red from the refindex
+* `refindex` - index in reference value array within fmu data sent by `bdl-fmi` component, if more  indexes, use refvalues or separate indices by comma
+* `refvalues` - number of values to be red from the refindex, if they are after each other, if not then use comma separated values in refindex
 * `type` - type of chart; available from chartjs library, default `doughnut`, possible values `line`, `bar`, `radar`,`doughnut`, `pie`, `polarArea`
 * `initialdata=''` - comma separated values of initial data (for more datasets use semicolon `;` - not used in basic charts)
 * `width=300`  - width of chart canvas in px
@@ -165,8 +165,7 @@ Special case of `bdl-chartjs` for line type charts in time series. FMU data cont
   fromid="id4" 
   labels="Pressure in Aorta,Pressure in Left Ventricle, Pressure in Left Atria"
   initialdata="0,1,2,3,4,5,6,7,8,9,10;80,100,120,115,110,105,100,95,90,85;20,25,30,28,26,24,22,20,18,16;20,100,120,115,110,27,25,23,21,19,17" 
-  refindex="2"   
-  refvalues="3"></bdl-chartjs-time>
+  refindex="2,3,4"></bdl-chartjs-time>
 ```
 
 <bdl-chartjs-time  
@@ -176,8 +175,7 @@ Special case of `bdl-chartjs` for line type charts in time series. FMU data cont
   fromid="id4" 
   labels="Pressure in Aorta,Pressure in Left Ventricle, Pressure in Left Atria"
   initialdata="0,1,2,3,4,5,6,7,8,9,10;80,100,120,115,110,105,100,95,90,85;20,25,30,28,26,24,22,20,18,16;20,100,120,115,110,27,25,23,21,19,17" 
-  refindex="2"   
-  refvalues="3"></bdl-chartjs-time>
+  refindex="2,3,4"></bdl-chartjs-time>
 
 
 ## `bdl-chartjs-xy`
