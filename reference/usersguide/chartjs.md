@@ -24,6 +24,8 @@ Creates basic chartjs graph from current data.
 * `labels` - comma separated labels of dataset
 * `refindex` - index in reference value array within fmu data sent by `bdl-fmi` component, if more  indexes, use refvalues or separate indices by comma
 * `refvalues` - number of values to be red from the refindex, if they are after each other, if not then use comma separated values in refindex
+  * `refindex="2" refvalues="3"` will take 3 values from an array sent by fmu component with indices 2,3,4
+  * `refindex="2,5,8"` will take 3 values from an array sent by fmu component with indices 2,5,8
 * `type` - type of chart; available from chartjs library, default `doughnut`, possible values `line`, `bar`, `radar`,`doughnut`, `pie`, `polarArea`
 * `initialdata=''` - comma separated values of initial data (for more datasets use semicolon `;` - not used in basic charts)
 * `width=300`  - width of chart canvas in px
