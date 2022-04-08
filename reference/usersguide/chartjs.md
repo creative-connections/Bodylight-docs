@@ -36,7 +36,9 @@ Creates basic chartjs graph from current data.
 * `xlabel` - label on x axis
 * `convertors` - convertors separated by semicolon per variable ';' to convert raw data taken from fmu into visualisation in 
   * EITHER `numerator,denominator,addend` $x_{converted} = \frac{x \times \text{numerator}}{\text{denominator}} + \text{addend}$
+  * e.g.: `convertors="1,60,0"` will convert value as $x_c = \frac{x \times 1}{60} + 0$
   * OR `expression with x`, $x_{converted} = \overbrace{f(x)}^{\text{expression with x}}$
+  * e.g.:`convertors="x/60"` will convert value as $x_c = \frac{x}{60}$
 * `generatelabels=false` - if true, labels for dataset are generated as 'variable 1' .. ' variable n'
 * `responsive = false` - if `true`, canvas is rescaled per available space, `false` - to keep width and height
 * `canvasobj` - if defined then use this object name to get canvas object. E.g. to draw chart to another environment (e.g. surface in VR or AR)
