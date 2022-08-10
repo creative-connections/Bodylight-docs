@@ -5,13 +5,18 @@
   * `src` (optional) specifies script with FMU JS to be loaded.  If not specified, it is expected that some `<script src='bdl-fmi.js'>` is already included in HTML head. FMU JS is output of FMU compiler.
   * `tolerance` tolerance of the solver (default 0.001)
   * `starttime` start time of the simulation (default 0)
+  * `stoptime` stops simulation at specified (default 0 - do not stop)
   * `guid` guid as it appears in FMU model description
-  * `valuereferences` references to variables, custom event 'fmidata' with `event.detail` set to  `{time: number , data:[number,...]}` where time is timepoint of the current simulation step and data is array of values in same order as in 
+  * `valuereferences` references to variables, custom event 'fmidata' with `event.detail` set to  `{time: number , data:[number,...]}` where time is timepoint of the current simulation step and data is array of values in same order as in
   valuereferences
-  * `inputs` id of component, value reference, optional nominator,denominator to normalize `value * nominator / denominator` all delimited by coma`,`, other inputs delimited by semicolon `;` e.g. `inputs="id1,1677323,1,60;id2,16725364"` cause that the value from id1 will be converted `x= valueid1 *1/60` and value from id2 `x = valueid2*1/1` ; 
-  * `otherinputs` ids of components which triggers custom event 'fmiinput', it is expected that in event.detail contains 
+  * `inputs` id of component, value reference, optional nominator,denominator to normalize `value * nominator / denominator` all delimited by coma`,`, other inputs delimited by semicolon `;` e.g. `inputs="id1,1677323,1,60;id2,16725364"` cause that the value from id1 will be converted `x= valueid1 *1/60` and value from id2 `x = valueid2*1/1` ;
+  * `otherinputs` ids of components which triggers custom event 'fmiinput', it is expected that in event.detail contains
   this structure `{ valuereference: number, value: number }`
-  * `showcontrols` - default `true`, shows/hides basic control buttons to start/stop/restart simulation 
+  * `showcontrols` - default `true`, shows/hides basic control buttons to start/stop/restart simulation
+  * `mode` - sets mode of simulation to `continuous` or `oneshot` or `onestep`
+    * `continuous` - (default) simulator shows buttons to start/stop/restart and performs simulation from starttime to unlimited time continuously sending simulation data
+    * `oneshot` - no controls are shown and simulation is performed from `starttime` to `stoptime` after component is loaded and after each parameter change
+    * `onestep` - no controls are shown and simulation performs one step after component is loaded and one step after each parameter change.
 
 Example:
 ```xml
@@ -26,4 +31,4 @@ Example:
                valuereferences="637534281,637534272,33554436, 33554437, 33554432, 33554436, 33554437, 33554433, 16777313"
                valuelabels="Pressure in Aorta,Pressure in Left Ventricle, Intrathoracic Artery Volume, Extrathoracic Arteries Volume, Pulmonary Arteries Volume, Intrathoracic Veins Volume, Extrathoracic Veins volume, Pulmonary Veins Volume,Heart Rate"
                inputs="id1,16777313,1,60"></bdl-fmi>
-  
+
