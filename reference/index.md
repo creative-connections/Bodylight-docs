@@ -7,10 +7,15 @@ Bodylight is suite of tools to integrate
 
 to create interactive web simulators with proper visualisation.
 
-Web simulators are in-browser therefore no server, no cloud or enhanced resources are required. 
+<a class="w3-button w3-theme-d1" href="https://orgpad.com/s/0VGy27nGaid">High Level presentation</a> - High level presentation about Bodylight.js 2.0 given in CompBioMed 2023 conference in Munich.
 
-Web simulators can be distributed as static web pages. As proper example - the following documentation includes live web simulators
-utilizing great service of `GITHUB-PAGES` to deliver static web content. 
+Briefly:
+
+1. Web simulators are in-browser therefore no server, no cloud or enhanced resources are required. 
+
+2. Web simulators can be distributed as static web pages. As proper example - the following documentation includes live web simulators utilizing great service of `GITHUB-PAGES` to deliver static web content. Means server serves the files only - no server computing or calculation is needed.
+
+3. As a consequence - web simulators can be integrated into standalone apps - native mobile apps or virtual reality apps - thanks to WebView implementation for various platforms.
 
 The documentation is divided to: 
 
